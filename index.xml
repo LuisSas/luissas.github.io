@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Luis Sastrè Blog</title>
-    <link>https://luissas.github.io/public/</link>
+    <link>https://luissas.github.io/</link>
     <description>Recent content on Luis Sastrè Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Oct 2017 09:10:42 -0500</lastBuildDate>
     
-	<atom:link href="https://luissas.github.io/public/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://luissas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My second week in Making devs</title>
-      <link>https://luissas.github.io/public/post/second-post/</link>
+      <link>https://luissas.github.io/post/second-post/</link>
       <pubDate>Wed, 04 Oct 2017 09:10:42 -0500</pubDate>
       
-      <guid>https://luissas.github.io/public/post/second-post/</guid>
+      <guid>https://luissas.github.io/post/second-post/</guid>
       <description>Mi segunda semana en Makingdevs Que tal a todos, este día les platicare que paso la segunda semana en la cual ocurrio un temblor el 19 de septiembre (martes) por lo cual no pudimos estar en la oficina, pero pude aprovechar los días para estudiar por mi cuenta un poco de Groovy que es lo que actualmente estoy ocupando, al igual que aprovechar mi tiempo instalando varias herramientas que tengo en Makingdevs en mi computadora personal.</description>
     </item>
     
     <item>
       <title>The three week...</title>
-      <link>https://luissas.github.io/public/post/third-post/</link>
+      <link>https://luissas.github.io/post/third-post/</link>
       <pubDate>Wed, 04 Oct 2017 09:10:42 -0500</pubDate>
       
-      <guid>https://luissas.github.io/public/post/third-post/</guid>
+      <guid>https://luissas.github.io/post/third-post/</guid>
       <description>Tercera semana&amp;hellip; como segunda en la oficina Ya empece a trabajar mejor con Temoc el que es mi mentor en la oficina(o como dicen todos los demas mi papá).
 Empece a ver mejor la aplicación de Modulus-uno que es un projecto que llevan alrededor de 1 año trabajando o algo asi y esta muy muy padre, tiene tantas cosas y Temoc me estuvo explicando varias cosas tanto de la aplicación como de GitHub.</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://luissas.github.io/public/post/hello-world/</link>
+      <link>https://luissas.github.io/post/hello-world/</link>
       <pubDate>Tue, 03 Oct 2017 09:10:42 -0500</pubDate>
       
-      <guid>https://luissas.github.io/public/post/hello-world/</guid>
+      <guid>https://luissas.github.io/post/hello-world/</guid>
       <description>Bienvenidos a mi blog Hola a todos, les quiero compartir lo que es la primera entrada de mi blog, y de mi primera semana en Makingdevs.
 Antes que nada mi nombre es Luis Enrique Sastré García, actualmente estoy estudiando el 7º semestre en UPIICSA, la carrera de ingenieria en informatica, espero que este blog les sea de ayuda en un futuro, por el momento les contare de mi primera semana en Makingdevs.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://luissas.github.io/public/posts/my-first-post/</link>
+      <link>https://luissas.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 02 Oct 2017 13:10:54 -0500</pubDate>
       
-      <guid>https://luissas.github.io/public/posts/my-first-post/</guid>
+      <guid>https://luissas.github.io/posts/my-first-post/</guid>
       <description></description>
     </item>
     
