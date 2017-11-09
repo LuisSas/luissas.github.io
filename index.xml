@@ -28,8 +28,7 @@ El dia 11 de septiembre de 2017 fue mi primer dia en Makingdevs, inicie con un c
       <pubDate>Tue, 07 Nov 2017 09:19:59 -0600</pubDate>
       
       <guid>https://luissas.github.io/post/pruebas/</guid>
-      <description>##Testing
-Las pruebas por lo que me di cuenta son muy importantes en el desarrollo de software, te marcan una pauta para saber como ir escribiendo codigo, sin pruebas no se puede programar de una manera tan eficaz.
+      <description>Testing Las pruebas por lo que me di cuenta son muy importantes en el desarrollo de software, te marcan una pauta para saber como ir escribiendo codigo, sin pruebas no se puede programar de una manera tan eficaz.
 Hace poco hice un ejercicio que se llama StringCalculator, es un ejercicio que ejemplifica de una manera muy buena el como ir escribiendo codigo de forma incremental; Lo que te explica el ejercicio es que tu no puedes escribir código si no tienes una prueba que lo verifique, esto en un principio suena facil&amp;hellip; pero cuando un ejercicio tiene muchas pruebas y las tienes que pasar todas es cuando se generan pequeños conflictos, bueno o por lo menos eso senti, y no conflictos para el proyecto, o programa que estes haciendo sino para la propia robustez del programa.</description>
     </item>
     
