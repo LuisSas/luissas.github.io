@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Spock</title>
+
+  
+  
+
+
+
+
+  
+  <meta name="author" content="Luis Sastré" />
+  <meta name="description" content="##Spock
+Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock." />
+
+  
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Spock" />
+    <meta name="twitter:description" content="##Spock
+Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock." />
+    <meta name="twitter:image" content="https://luissas.github.io/img/avatar.jpg" />
+  
+
+
+
+
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+<link rel="canonical" href="https://luissas.github.io/post/spock/" />
+<link rel="alternative" href="https://luissas.github.io/index.xml" title="Luis Sastré Blog" type="application/atom+xml" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Luis Sastré Blog" />
+<meta name="msapplication-tooltip" content="Luis Sastré Blog" />
+<meta name='msapplication-navbutton-color' content="#5fbf5e" />
+<meta name="msapplication-TileColor" content="#5fbf5e" />
+<meta name="msapplication-TileImage" content="/img/tile-image-windows.png" />
+<link rel="icon" href="https://luissas.github.io/img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://luissas.github.io/img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://luissas.github.io/img/favicon-32x32.png" />
+<link rel="icon" sizes="192x192" href="https://luissas.github.io/img/touch-icon-android.png" />
+<link rel="apple-touch-icon" href="https://luissas.github.io/img/touch-icon-apple.png" />
+<link rel="mask-icon" href="https://luissas.github.io/img/safari-pinned-tab.svg" color="#5fbf5e" />
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.2.8/alt/video-js-cdn.min.css" />
+
+<link rel="stylesheet" href="https://luissas.github.io/css/bundle.css" />
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/video.js/6.2.8/ie8/videojs-ie8.min.js"></script>
+  <![endif]-->
+
+<!--[if lte IE 11]>
+    <script src="//cdn.bootcss.com/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+
+<script src="//cdn.bootcss.com/object-fit-images/3.2.3/ofi.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/smooth-scroll/12.1.4/js/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      
+        
+        <a title="Go to comments" class="to-comment" href="#disqus_thread"><span class="icon icon-comment"></span></a>
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="https://luissas.github.io/img/avatar.jpg" alt="Avatar">
+  
+  <h2 class="title">Luis Sastré Blog</h2>
+  
+  <p class="subtitle">~ Make your dreams ~</p>
+  <button class="menu-toggle" type="button">
+    <span class="icon icon-menu"></span>
+  </button>
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item  is-active"><a href="https://luissas.github.io/">Home</a></li>
+      
+        <li class="menu-item "><a href="https://github.com/LuisSas">Works</a></li>
+      
+        <li class="menu-item "><a href="https://luissas.github.io/about/">About</a></li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list">
+
+      
+      <li class="social-item">
+        <a href="mailto:luis@makingdevs.com" title="Email"><span class="icon icon-email"></span></a>
+      </li>
+
+      
+      <li class="social-item">
+        <a href="//github.com/LuisSas" title="GitHub"><span class="icon icon-github"></span></a>
+      </li>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li class="social-item">
+        <a href="https://luissas.github.io/index.xml"><span class="icon icon-rss" title="RSS"></span></a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Spock</h1>
+      <p class="post-meta">@Luis Sastré · Dec 6, 2017 · 3 min read</p>
+    </header>
+    <article class="post-content"><p>##Spock</p>
+
+<p>Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.</p>
+
+<p>Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock.</p>
+
+<p>Lo que hace interesante a spock es darte una simplificación mayor a la hora de hacer tus pruebas, logra que las pruebas que hagas se vean de una forma simple y elegante, aunque se tengan que probar varias cosas a la vez.</p>
+
+<p>Pero que hace que spock sea de tanta ayuda, pues como anteriormente dije, su sintaxis, la forma en la que se ven tus pruebas dan una vista mas amigable y coqueta a estas, la forma en que se escribe el problema a tratar es tan explicito y facil de entender tanto que hasta alguien que no sabe programar sabe que es lo que esta prbando la prueba.</p>
+
+<p>Como se declaran las pruebas en spock es de la manera mas sencilla posible, <em>En forma de String</em>, esto hace que puedas tener algo como esto:</p>
+
+<blockquote>
+<p>void  &ldquo;Making tests&rdquo;() {}</p>
+</blockquote>
+
+<p>De esta forma puedes entender que hace cada prueba y no importa si tienes muchas pruebas seguidas en el caso de que hagas por ejemplo las pruebas de una calculadora y quieras probar la suma, la resta y la multiplicación las puedes declarar de la siguiente manera:</p>
+
+<blockquote>
+<p>void &ldquo;Testing sum&rdquo;(){}
+void &ldquo;Testing subtraction&rdquo;(){}
+void &ldquo;Testing multiplication&rdquo;(){}</p>
+</blockquote>
+
+<p>De esta forma puedes entender lo que va a hacer cada prueba, que va a probar cada una lo que esta bastante bien, ya que sin saber nada de código alguien sabe que la primera prueba va a probar la parte de sumar en nuestro código, la segunda las restas y asi sucesivamente.</p>
+
+<p>Ahora vamos a explicar lo que va a ir dentro de las pruebas de spock, por que spock no solo tiene los nombres bonitos, tiene diferentes especificaciones o bloques que se pueden meter dentro de los metodos de las pruebas, bueno en realidad se tienen que meter estos bloques para que funcionen de algo estas pruebas&hellip; no todos los bloques son necesarios, pero es util saber cuales son, por ejemplo:</p>
+
+<blockquote>
+<p>void &ldquo;Making test&rdquo;() {
+  //blocks go here
+}</p>
+</blockquote>
+
+<p>Y los bloques que pueden ir dentro de las pruebas de spock pueden ser los siguientes:</p>
+
+<blockquote>
+<p>void &ldquo;Making test&rdquo;() {
+  given: &ldquo;&rdquo;
+  when: &ldquo;&rdquo;
+  and:&ldquo;&rdquo;
+  then: &ldquo;&rdquo;
+  where: &ldquo;&rdquo;
+}</p>
+</blockquote>
+
+<p>El primer bloque como su nombre lo indica es &ldquo;dado&rdquo;, vamos a llenar este bloque o la descripción de este bloque con algo que se nos de, en el caso de sumas, la prueba de sumar que estaba anteriormente le vamos a dar un dato por ejemplo</p>
+
+<blockquote>
+<p>void &ldquo;Testing sum&rdquo;(){
+  given:&ldquo;A number&rdquo;
+}</p>
+</blockquote>
+
+<p>Hasta este paso nosotros ya tenemos lo que es el valor que vamos a dar, si queremos dar mas valores podriamos</p>
+</article>
+    <footer class="post-footer">
+      
+      <p class="post-copyright">
+        
+      </p>
+    </footer>
+    
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "luissas-me" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+    
+  </section>
+  <footer class="site-footer">
+  <p>© 2017 Luis Sastré Blog</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  
+</footer>
+
+
+
+<script async src="//cdn.bootcss.com/video.js/6.2.8/alt/video.novtt.min.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+<script src="https://luissas.github.io/js/bundle.js"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-109683885-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+  </body>
+</html>

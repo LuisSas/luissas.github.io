@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Luis Sastrè Blog</title>
+    <title>Posts on Luis Sastré Blog</title>
     <link>https://luissas.github.io/post/</link>
-    <description>Recent content in Posts on Luis Sastrè Blog</description>
+    <description>Recent content in Posts on Luis Sastré Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2017 09:19:59 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 06 Dec 2017 12:39:39 -0600</lastBuildDate>
     
 	<atom:link href="https://luissas.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spock</title>
+      <link>https://luissas.github.io/post/spock/</link>
+      <pubDate>Wed, 06 Dec 2017 12:39:39 -0600</pubDate>
+      
+      <guid>https://luissas.github.io/post/spock/</guid>
+      <description>##Spock
+Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock.</description>
+    </item>
     
     <item>
       <title>Pruebas</title>
@@ -17,8 +28,8 @@
       <pubDate>Tue, 07 Nov 2017 09:19:59 -0600</pubDate>
       
       <guid>https://luissas.github.io/post/pruebas/</guid>
-      <description>Testing Las pruebas por lo que me di cuenta son muy importantes en el desarrollo de software, te marcan una pauta para saber como ir escribiendo codigo, sin pruebas no se puede programar de una manera tan eficaz.
-Hace poco hice un ejercicio que se llama StringCalculator, es un ejercicio que ejemplifica de una manera muy buena el como ir escribiendo codigo de forma incremental; Lo que te explica el ejercicio es que tu no puedes escribir código si no tienes una prueba que lo verifique, esto en un principio suena facil&amp;hellip; pero cuando un ejercicio tiene muchas pruebas y las tienes que pasar todas es cuando se generan pequeños conflictos, bueno o por lo menos eso senti, y no conflictos para el proyecto, o programa que estes haciendo sino para la propia robustez del programa.</description>
+      <description>Testing Las pruebas son basicamente un conjunto de actividades dentro del desarollo de software. Dependiendo del tipo de pruebas estas actividades podrán ser implementadas en cualquier momento de dicho proceso de desarrollo. Existen distintos modelos de desarrollo de software, así como modelos de pruebas. A cada uno corresponde un nivel distinto de involucramiento en las actividades de desarrollo.
+Las pruebas son muy importantes en el desarollo de software, marcan pauta para saber como ir escribiendo nuestro código de una manera mas eficaz.</description>
     </item>
     
     <item>
