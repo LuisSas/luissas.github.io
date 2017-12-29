@@ -207,15 +207,15 @@ Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de pr
 <p>Pero que hace que spock sea de tanta ayuda, pues como anteriormente dije, su sintaxis, la forma en la que se ven tus pruebas dan una vista mas amigable y coqueta a estas, la forma en que se escribe el problema a tratar es tan explicito y facil de entender tanto que hasta alguien que no sabe programar sabe que es lo que esta probando la prueba.</p>
 
 <p>Como se declaran las pruebas en spock es de la manera mas sencilla posible, <em>En forma de String</em>, esto hace que puedas tener algo como esto:</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span>  <span class="s">&#34;Making tests&#34;</span><span class="o">()</span> <span class="o">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">void</span>  <span class="s2">&#34;Making tests&#34;</span><span class="p">()</span> <span class="p">{</span>
   
-<span class="o">}</span></code></pre></div>
+<span class="p">}</span></code></pre></div>
 <hr />
 
 <p>De esta forma puedes entender que hace cada prueba y no importa si tienes muchas pruebas seguidas en el caso de que hagas por ejemplo las pruebas de una calculadora y quieras probar la suma, la resta y la multiplicación las puedes declarar de la siguiente manera:</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){}</span>
-<span class="kt">void</span> <span class="s">&#34;Testing subtraction&#34;</span><span class="o">(){}</span>
-<span class="kt">void</span> <span class="s">&#34;Testing multiplication&#34;</span><span class="o">(){}</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">void</span> <span class="s2">&#34;Testing sum&#34;</span><span class="p">(){}</span>
+<span class="k">void</span> <span class="s2">&#34;Testing subtraction&#34;</span><span class="p">(){}</span>
+<span class="k">void</span> <span class="s2">&#34;Testing multiplication&#34;</span><span class="p">(){}</span></code></pre></div>
 <p>De esta forma puedes entender lo que va a hacer cada prueba, que va a probar cada una lo que esta bastante bien, ya que sin saber nada de código alguien sabe que la primera prueba va a probar la parte de sumar en nuestro código, la segunda las restas y asi sucesivamente.</p>
 
 <p>Ahora vamos a explicar lo que va a ir dentro de las pruebas de spock, por que spock no solo tiene los nombres bonitos, tiene diferentes especificaciones o bloques que se pueden meter dentro de los metodos de las pruebas, bueno en realidad se tienen que meter estos bloques para que funcionen de algo estas pruebas&hellip; no todos los bloques son necesarios, pero es util saber cuales son, por ejemplo:</p>
