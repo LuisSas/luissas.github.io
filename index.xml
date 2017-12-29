@@ -28,8 +28,7 @@ El dia 11 de septiembre de 2017 fue mi primer dia en Makingdevs, inicie con un c
       <pubDate>Wed, 06 Dec 2017 12:39:39 -0600</pubDate>
       
       <guid>https://luissas.github.io/post/spock/</guid>
-      <description>##Spock
-Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+      <description>Spock Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
 Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock.</description>
     </item>
     

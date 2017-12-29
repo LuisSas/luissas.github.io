@@ -15,8 +15,7 @@
 
   
   <meta name="author" content="Luis Sastré" />
-  <meta name="description" content="##Spock
-Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+  <meta name="description" content="Spock Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
 Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock." />
 
   
@@ -24,8 +23,7 @@ Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de pr
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@gohugoio" />
     <meta name="twitter:title" content="Spock" />
-    <meta name="twitter:description" content="##Spock
-Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+    <meta name="twitter:description" content="Spock Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
 Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock." />
     <meta name="twitter:image" content="https://luissas.github.io/img/avatar.jpg" />
   
@@ -194,9 +192,11 @@ Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de pr
   <section class="main post-detail">
     <header class="post-header">
       <h1 class="post-title">Spock</h1>
-      <p class="post-meta">@Luis Sastré · Dec 6, 2017 · 3 min read</p>
+      <p class="post-meta">@Luis Sastré · Dec 6, 2017 · 4 min read</p>
     </header>
-    <article class="post-content"><p>##Spock</p>
+    <article class="post-content">
+
+<h2 id="spock">Spock</h2>
 
 <p>Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.</p>
 
@@ -204,53 +204,80 @@ Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de pr
 
 <p>Lo que hace interesante a spock es darte una simplificación mayor a la hora de hacer tus pruebas, logra que las pruebas que hagas se vean de una forma simple y elegante, aunque se tengan que probar varias cosas a la vez.</p>
 
-<p>Pero que hace que spock sea de tanta ayuda, pues como anteriormente dije, su sintaxis, la forma en la que se ven tus pruebas dan una vista mas amigable y coqueta a estas, la forma en que se escribe el problema a tratar es tan explicito y facil de entender tanto que hasta alguien que no sabe programar sabe que es lo que esta prbando la prueba.</p>
+<p>Pero que hace que spock sea de tanta ayuda, pues como anteriormente dije, su sintaxis, la forma en la que se ven tus pruebas dan una vista mas amigable y coqueta a estas, la forma en que se escribe el problema a tratar es tan explicito y facil de entender tanto que hasta alguien que no sabe programar sabe que es lo que esta probando la prueba.</p>
 
 <p>Como se declaran las pruebas en spock es de la manera mas sencilla posible, <em>En forma de String</em>, esto hace que puedas tener algo como esto:</p>
-
-<blockquote>
-<p>void  &ldquo;Making tests&rdquo;() {}</p>
-</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span>  <span class="s">&#34;Making tests&#34;</span><span class="o">()</span> <span class="o">{</span>
+  
+<span class="o">}</span></code></pre></div>
+<hr />
 
 <p>De esta forma puedes entender que hace cada prueba y no importa si tienes muchas pruebas seguidas en el caso de que hagas por ejemplo las pruebas de una calculadora y quieras probar la suma, la resta y la multiplicación las puedes declarar de la siguiente manera:</p>
-
-<blockquote>
-<p>void &ldquo;Testing sum&rdquo;(){}
-void &ldquo;Testing subtraction&rdquo;(){}
-void &ldquo;Testing multiplication&rdquo;(){}</p>
-</blockquote>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){}</span>
+<span class="kt">void</span> <span class="s">&#34;Testing subtraction&#34;</span><span class="o">(){}</span>
+<span class="kt">void</span> <span class="s">&#34;Testing multiplication&#34;</span><span class="o">(){}</span></code></pre></div>
 <p>De esta forma puedes entender lo que va a hacer cada prueba, que va a probar cada una lo que esta bastante bien, ya que sin saber nada de código alguien sabe que la primera prueba va a probar la parte de sumar en nuestro código, la segunda las restas y asi sucesivamente.</p>
 
 <p>Ahora vamos a explicar lo que va a ir dentro de las pruebas de spock, por que spock no solo tiene los nombres bonitos, tiene diferentes especificaciones o bloques que se pueden meter dentro de los metodos de las pruebas, bueno en realidad se tienen que meter estos bloques para que funcionen de algo estas pruebas&hellip; no todos los bloques son necesarios, pero es util saber cuales son, por ejemplo:</p>
-
-<blockquote>
-<p>void &ldquo;Making test&rdquo;() {
-  //blocks go here
-}</p>
-</blockquote>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Making test&#34;</span><span class="o">()</span> <span class="o">{</span>
+	<span class="n">blocks</span> <span class="n">go</span> <span class="n">here</span>
+<span class="o">}</span></code></pre></div>
 <p>Y los bloques que pueden ir dentro de las pruebas de spock pueden ser los siguientes:</p>
-
-<blockquote>
-<p>void &ldquo;Making test&rdquo;() {
-  given: &ldquo;&rdquo;
-  when: &ldquo;&rdquo;
-  and:&ldquo;&rdquo;
-  then: &ldquo;&rdquo;
-  where: &ldquo;&rdquo;
-}</p>
-</blockquote>
-
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Making test&#34;</span><span class="o">()</span> <span class="o">{</span><span class="nl">
+</span><span class="nl">	given:
+</span><span class="nl">	when:
+</span><span class="nl">	and:
+</span><span class="nl">	then:
+</span><span class="nl">	where:</span>
+<span class="o">}</span></code></pre></div>
 <p>El primer bloque como su nombre lo indica es &ldquo;dado&rdquo;, vamos a llenar este bloque o la descripción de este bloque con algo que se nos de, en el caso de sumas, la prueba de sumar que estaba anteriormente le vamos a dar un dato por ejemplo</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){</span><span class="nl">
+</span><span class="nl">	given:</span><span class="s">&#34;A number&#34;</span>
+<span class="o">}</span></code></pre></div>
+<p>Hasta este paso nosotros ya tenemos lo que es el valor que vamos a dar, si queremos dar mas valores podriamos poner el bloque <strong>and</strong></p>
 
-<blockquote>
-<p>void &ldquo;Testing sum&rdquo;(){
-  given:&ldquo;A number&rdquo;
-}</p>
-</blockquote>
-
-<p>Hasta este paso nosotros ya tenemos lo que es el valor que vamos a dar, si queremos dar mas valores podriamos</p>
+<p>Por lo regular despues de este bloque podemos escribir lo demas que se espera al ejecutar la prueba, en este caso seria lo que se espera hacer y el resultado que se espera.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){</span><span class="nl">
+</span><span class="nl">	given:</span><span class="s">&#34;A number&#34;</span><span class="nl">
+</span><span class="nl">	when:</span><span class="s">&#34;Calculating with this number&#34;</span><span class="nl">
+</span><span class="nl">	then:</span><span class="s">&#34;Result&#34;</span>
+<span class="o">}</span></code></pre></div>
+<p>Eso es lo que va a hacer nuestra prueba, va a recibir un número, despues va a calcular con ese numero y va a esperar si el resultado si es el esperado con el obtenido, pero esto no funciona si solo lo dejamos así, por lo que vamos a escribir que es lo que esta adentro de cada bloque.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){</span><span class="nl">
+</span><span class="nl">    given:</span><span class="s">&#34;A number&#34;</span>
+        <span class="kt">int</span> <span class="n">number1</span> <span class="o">=</span> <span class="n">5</span>
+        <span class="kt">int</span> <span class="n">number2</span> <span class="o">=</span> <span class="n">5</span><span class="nl">
+</span><span class="nl">    when:</span><span class="s">&#34;Calculating with these numbers&#34;</span>
+        <span class="c1">//Aqui vamos a poner el metodo que se va a ejecutar
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">calculator</span><span class="o">.</span><span class="na">sum</span><span class="o">(</span><span class="n">number1</span><span class="o">,</span> <span class="n">number2</span><span class="o">)</span><span class="nl">
+</span><span class="nl">    then:</span><span class="s">&#34;Result&#34;</span>
+        <span class="n">result</span> <span class="o">==</span> <span class="n">10</span>
+<span class="o">}</span></code></pre></div>
+<p>Hasta este punto ya tenemos nuestra prueba hecha, pero nos falta escribir el código que pase esa prueba.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Calculator</span><span class="o">{</span>
+    <span class="n">def</span> <span class="nf">sum</span><span class="o">(</span><span class="kt">int</span> <span class="n">number1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">number2</span><span class="o">){</span>
+        <span class="n">number1</span> <span class="o">+</span> <span class="n">number2</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+<p>Y aqui es donde entra otro cambio importante de spock con respecto de otras herramientas para hacer testing, y es que puedes probar multiples casos y compararlos todos de una manera secuencial, para eso nuestro bloque de <strong>where</strong> es el que nos va a facilitar eso.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="s">&#34;Testing sum&#34;</span><span class="o">(){</span><span class="nl">
+</span><span class="nl">    given:</span><span class="s">&#34;A number&#34;</span>
+        <span class="kt">int</span> <span class="n">number1</span> <span class="o">=</span> <span class="n">numbers1</span>
+        <span class="kt">int</span> <span class="n">number2</span> <span class="o">=</span> <span class="n">numbers2</span><span class="nl">
+</span><span class="nl">    when:</span><span class="s">&#34;Calculating with these numbers&#34;</span>
+        <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">calculator</span><span class="o">.</span><span class="na">sum</span><span class="o">(</span><span class="n">number1</span><span class="o">,</span> <span class="n">number2</span><span class="o">)</span><span class="nl">
+</span><span class="nl">    then:</span><span class="s">&#34;Result&#34;</span>
+        <span class="n">result</span> <span class="o">==</span> <span class="n">expected</span><span class="nl">
+</span><span class="nl">    where:</span>
+    <span class="n">numbers1</span>    <span class="o">|</span>    <span class="n">numbers2</span>    <span class="o">||</span>    <span class="n">expected</span>
+    <span class="n">1</span>           <span class="o">|</span>    <span class="n">2</span>           <span class="o">||</span>    <span class="n">3</span>
+    <span class="n">2</span>           <span class="o">|</span>    <span class="n">10</span>          <span class="o">||</span>    <span class="n">12</span>
+    <span class="n">10000</span>       <span class="o">|</span>    <span class="n">10000</span>       <span class="o">||</span>    <span class="n">20000</span>
+    <span class="o">-</span><span class="n">10</span>         <span class="o">|</span>    <span class="n">20</span>          <span class="o">||</span>    <span class="n">10</span>
+    <span class="o">-</span><span class="n">10</span>         <span class="o">|</span>    <span class="o">-</span><span class="n">5</span>          <span class="o">||</span>    <span class="o">-</span><span class="n">15</span>
+    <span class="n">0</span>           <span class="o">|</span>    <span class="n">0</span>           <span class="o">||</span>    <span class="n">0</span>
+<span class="o">}</span></code></pre></div>
+<p>Ya en este punto se probaron varios casos y sin la necesidad de hacer mas test por aparte, por lo que se puede ver que este bloque te facilita las cosas tanto, de una manera maravillosa!!</p>
 </article>
     <footer class="post-footer">
       
