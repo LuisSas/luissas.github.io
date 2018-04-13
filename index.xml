@@ -1,84 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Luis Sastré Blog</title>
-    <link>https://luissas.github.io/</link>
-    <description>Recent content on Luis Sastré Blog</description>
+    <title>Call me Jack</title>
+    <link>/</link>
+    <description>Recent content on Call me Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 00:18:30 -0500</lastBuildDate>
     
-	<atom:link href="https://luissas.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>https://luissas.github.io/about/</link>
-      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      <title>What about me?</title>
+      <link>/about/</link>
+      <pubDate>Fri, 13 Apr 2018 00:18:30 -0500</pubDate>
       
-      <guid>https://luissas.github.io/about/</guid>
-      <description>Hola a todos, en este blog les contare experiencias y aprendizaje que voy teniendo en Makingdevs.
-Antes que nada mi nombre es Luis Enrique Sastré García, tengo 21 años y actualmente estoy estudiando el 7º semestre en UPIICSA, la carrera de ingenieria en informatica, espero que este blog les sea de ayuda en un futuro.
-El dia 11 de septiembre de 2017 fue mi primer dia en Makingdevs, inicie con un curso de git básico&amp;hellip; pero esto se los contare en mi primer post</description>
+      <guid>/about/</guid>
+      <description>Ohh hello everyone My name is Jack and I am very excited to share my experiences and learnings&amp;hellip;
+I am a software developer for a short time, but it is a wonderful thing to enter this world, you can know a lot of things when you start to see and enter this vast world of technology and learning.
+I hope you really enjoy my writing and the topics I am putting here.</description>
     </item>
     
     <item>
       <title>Spock</title>
-      <link>https://luissas.github.io/post/spock/</link>
+      <link>/post/spock/</link>
       <pubDate>Wed, 06 Dec 2017 12:39:39 -0600</pubDate>
       
-      <guid>https://luissas.github.io/post/spock/</guid>
+      <guid>/post/spock/</guid>
       <description>Spock Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
 Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock.</description>
-    </item>
-    
-    <item>
-      <title>Pruebas</title>
-      <link>https://luissas.github.io/post/pruebas/</link>
-      <pubDate>Tue, 07 Nov 2017 09:19:59 -0600</pubDate>
-      
-      <guid>https://luissas.github.io/post/pruebas/</guid>
-      <description>Testing Las pruebas son basicamente un conjunto de actividades dentro del desarollo de software. Dependiendo del tipo de pruebas estas actividades podrán ser implementadas en cualquier momento de dicho proceso de desarrollo. Existen distintos modelos de desarrollo de software, así como modelos de pruebas. A cada uno corresponde un nivel distinto de involucramiento en las actividades de desarrollo.
-Las pruebas son muy importantes en el desarollo de software, marcan pauta para saber como ir escribiendo nuestro código de una manera mas eficaz.</description>
-    </item>
-    
-    <item>
-      <title>Curso de Agil</title>
-      <link>https://luissas.github.io/post/fourth-post/</link>
-      <pubDate>Thu, 19 Oct 2017 09:45:47 -0500</pubDate>
-      
-      <guid>https://luissas.github.io/post/fourth-post/</guid>
-      <description>Parte 1 En esta semana Juan nos impartio un curso sobre cultura agil, fue algo util y con un enfoque y forma de pensar muy diferente a la cual se tiene comunmente.
-Juego de la pelotita El curso inicio con un tipo de juego en el cual tu tenias que ir pasando una pelota a todos los integrantes, excepto a tus vecinos, y cuando llegara al ultimo se contaba un punto, bueno esa fue la primera parte de este juego, para esto teniamos que hacer una estimación de cuantos puntos íbamos a hacer para cada ronda, lo cual no tomamos muy enserio en la primera ronda por que nos propusimos hacer 60 puntos, y solo hicimos&amp;hellip; &amp;ldquo;0&amp;rdquo; asi que no estuvimos muy bien en ese sentido pero ya para la segunda ronda nos propusimos metas mas reales las cuales pudimos cumplir.</description>
-    </item>
-    
-    <item>
-      <title>Mi segunda semana</title>
-      <link>https://luissas.github.io/post/second-post/</link>
-      <pubDate>Wed, 04 Oct 2017 09:10:42 -0500</pubDate>
-      
-      <guid>https://luissas.github.io/post/second-post/</guid>
-      <description>Mi segunda semana en Makingdevs Que tal a todos, este día les platicare que paso la segunda semana en la cual ocurrio un temblor el 19 de septiembre (martes) por lo cual no pudimos estar en la oficina, pero pude aprovechar los días para estudiar por mi cuenta un poco de Groovy que es lo que actualmente estoy ocupando, al igual que aprovechar mi tiempo instalando varias herramientas que tengo en Makingdevs en mi computadora personal.</description>
-    </item>
-    
-    <item>
-      <title>Semana tres y contando</title>
-      <link>https://luissas.github.io/post/third-post/</link>
-      <pubDate>Wed, 04 Oct 2017 09:10:42 -0500</pubDate>
-      
-      <guid>https://luissas.github.io/post/third-post/</guid>
-      <description>Tercera semana&amp;hellip; como segunda en la oficina Ya empece a trabajar mejor con Temoc el que es mi mentor en la oficina \o como dicen todos los demas mi papá).
-Empece a ver mejor la aplicación de Modulus-uno que es un projecto que llevan alrededor de 1 año trabajando o algo asi y esta muy muy padre, tiene tantas cosas y Temoc me estuvo explicando varias cosas tanto de la aplicación como de GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://luissas.github.io/post/hello-world/</link>
-      <pubDate>Tue, 03 Oct 2017 09:10:42 -0500</pubDate>
-      
-      <guid>https://luissas.github.io/post/hello-world/</guid>
-      <description>Mi primer post&amp;hellip; mi primera semana Antes que nada en esta primera entrada les comentare de mi primera semana en MakinDevs, y como conoci (git) y (groovy).
-El primer día de esta semana aprendí sobre Git, una herramienta muy util y agradable, al principio fue confuso ya que no tenia experiencia usando este tipo de herramientas \Un controlador de versiones o sistema manejador de archivos) pero conforme fue pasando el curso me pude dar cuenta de lo importante que era el ir usando este tipo de herramientas en proyectos colaborativos, o en proyectos personales.</description>
     </item>
     
   </channel>
