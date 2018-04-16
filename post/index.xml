@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Call me Jack</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Call me Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Dec 2017 12:39:39 -0600</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spock</title>
+      <link>/post/spock/</link>
+      <pubDate>Wed, 06 Dec 2017 12:39:39 -0600</pubDate>
+      
+      <guid>/post/spock/</guid>
+      <description>Spock Spock es un framework para hacer pruebas en Java o en Groovy, desde un ejercicio sencillo hasta una aplicación completa llena de servicios que probar. Lo que hace diferente a spock es su forma de hacer las pruebas de una forma tan explicita y una sintaxis demasiado amigable y legible.
+Al momento de hacer pruebas, me di cuenta que si son muy utilies a la hora de programar, son de lo mas importante, y a la hora de leerlas no es muy dificil entenderles, bueno eso con problemas pequeños, pero a la hora de hacer un proceso mas grande se dificulta el seguir el ritmo de las pruebas, ahí es donde entra spock.</description>
+    </item>
+    
+  </channel>
+</rss>
