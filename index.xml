@@ -10,5 +10,77 @@
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Comenzando con CoffeeScript</title>
+      <link>/post/beginwithcoffeescript/</link>
+      <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
+      
+      <guid>/post/beginwithcoffeescript/</guid>
+      <description>
+
+&lt;p&gt;Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje&lt;/p&gt;
+
+&lt;p&gt;CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.&lt;/p&gt;
+
+&lt;p&gt;El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener.&lt;/p&gt;
+
+&lt;h3 id=&#34;instalación&#34;&gt;Instalación&lt;/h3&gt;
+
+&lt;p&gt;CoffeeScript se instala de una manera muy sencilla, lo que tenemos que tener instalado para correrlo en nuestra computadora es lo siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;node&lt;/li&gt;
+&lt;li&gt;npm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;npm install --general coffeescript
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;uso&#34;&gt;Uso&lt;/h3&gt;
+
+&lt;p&gt;Una vez instalado coffeescript ya podremos hacer uso de este lenguaje y de sus comandos y shell que tiene para ejecutar nuestros códigos&lt;/p&gt;
+
+&lt;script src=&#34;https://asciinema.org/a/Y6gJINJfSFpfl9OGjb4LkE4g1.js&#34; id=&#34;asciicast-Y6gJINJfSFpfl9OGjb4LkE4g1&#34; data-size=&#34;small&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;compilación&#34;&gt;Compilación&lt;/h3&gt;
+
+&lt;p&gt;Como se pudo observar al tener coffee instalado ya podremos hacer varias cosas, entre las cuales de las mas importantes serian la compilación de nuestros archivos &lt;strong&gt;&lt;em&gt;.coffee&lt;/em&gt;&lt;/strong&gt; a &lt;strong&gt;&lt;em&gt;.js&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;ejemplo-de-archivo-en-coffee&#34;&gt;Ejemplo de archivo en .coffee&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;square = (x) -&amp;gt; x * x
+cube = (x) -&amp;gt; square(x) * x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;archivo-compilado-a-js&#34;&gt;Archivo compilado a .js&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var cube, square;
+
+  square = function(x) {
+    return x * x;
+  };
+
+  cube = function(x) {
+    return square(x) * x;
+  };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;ventajas-de-usar-coffeescript&#34;&gt;Ventajas de usar CoffeeScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nos permite trabajar de una forma mas sencilla&lt;/li&gt;
+&lt;li&gt;Escribir menos código&lt;/li&gt;
+&lt;li&gt;Podemos aprender javascript leyendo el código compilado&lt;/li&gt;
+&lt;li&gt;Facil de mantener&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;desventajas-de-coffeescript&#34;&gt;Desventajas de CoffeeScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ya no tiene actualizaciones desde hace tiempo lo que hace que ya no sea soportado por varios frameworks&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
