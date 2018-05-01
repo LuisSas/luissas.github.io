@@ -18,8 +18,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Biography Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet.</description>
+      <description>Biography Luis Sastré is a software developer in Making Devs. He works as a programmer in Making Devs doing the best and funny things he likes to do&amp;hellip; Programming.
+My dream is that all the knowledge that I earn in all of different topics, I be able to share with all of us my dear audience.</description>
     </item>
     
     <item>
@@ -65,16 +65,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       
       <guid>/home/projects/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Custom Section</title>
-      <link>/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
     </item>
     
     <item>
