@@ -21,5 +21,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Groovy</title>
+      <link>/tags/groovy/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/tags/groovy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spock</title>
+      <link>/tags/spock/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/tags/spock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>/tags/test/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/tags/test/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

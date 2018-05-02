@@ -11,6 +11,79 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pruebas unitarias con Spock</title>
+      <link>/post/unittestwithspock/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/post/unittestwithspock/</guid>
+      <description>
+
+&lt;p&gt;Spock es un framework de testing para Java y Groovy, hace que los test se escriban de una manera muy facil y clara de leer y saber que van a probar.&lt;/p&gt;
+
+&lt;p&gt;Gracias a que sus pruebas que se dividen en bloques estas se ven descriptivas y ayuda que se puedan entender y añadir propias de manera muy sencilla.&lt;/p&gt;
+
+&lt;p&gt;Gracias a que se ocupa Groovy para las pruebas esto hace que el manejo de estructuras de datos, como listas o mapas se puedan escribir con muy poco código.&lt;/p&gt;
+
+&lt;h3 id=&#34;bloques&#34;&gt;Bloques&lt;/h3&gt;
+
+&lt;p&gt;Gracias al manejo de bloques en spock y que cada uno puede describirse por separado, los test son muy descriptivos en cuanto a que se requiere en cada parte y cuando se ejecuta que&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;class MathSpec extends Specification{
+  def &amp;quot;Sum of two numbers&amp;quot;(){
+    given:&amp;quot;the first number&amp;quot;
+      Integer number1 = 10
+    and:&amp;quot;the second number&amp;quot;
+      Integer number2 = 20
+    when:&amp;quot;The two numbers add up&amp;quot;
+      Integer result = number1 + number2
+    then:&amp;quot;The expected result&amp;quot;
+      result == 30
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Al ejecutar las pruebas se nos muestra cuantos tests fueron, cuantos pasaron y cuantos fallaron&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;JUnit 4 Runner, Tests: 1, Failures: 0, Time: 750
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;data-driven-testing&#34;&gt;Data Driven Testing&lt;/h3&gt;
+
+&lt;p&gt;El framework de spock permite probar un mismo método o estructura varias veces gracias al bloque &lt;strong&gt;&lt;em&gt;where:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;class MathSpec extends Specification{
+  def &amp;quot;Max of this two numbers&amp;quot;(){
+  	given:&amp;quot;3 numbers&amp;quot;
+  	expect:&amp;quot;the max of this two numbers&amp;quot;
+  	  [a, b].max() == c
+  	where:
+  	a | b | c
+  	1 | 2 | 2
+  	3 | 5 | 5
+  	8 | 1 | 8
+  	1 | 9 | 1
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Gracias a su assert &lt;strong&gt;&lt;em&gt;==&lt;/em&gt;&lt;/strong&gt; se nos muestra que caso es el que fallo y por que&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;JUnit 4 Runner, Tests: 1, Failures: 1, Time: 826
+Test Failure: Max of two numbers(MathSpec)
+Condition not satisfied:
+
+[a, b].max() == c
+ |  |  |     |  |
+ 1  9  9     |  1
+             false
+
+        at MathSpec.Max of two numbers(MathSpec.groovy:7)
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Comenzando con CoffeeScript</title>
       <link>/post/beginwithcoffeescript/</link>
       <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>

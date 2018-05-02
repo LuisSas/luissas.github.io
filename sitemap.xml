@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/unittestwithspock/</loc>
+      <lastmod>2018-05-01T20:01:09-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/beginwithcoffeescript/</loc>
       <lastmod>2018-05-01T02:42:46-05:00</lastmod>
     </url>
@@ -60,6 +69,16 @@
     
     <url>
     
+      <loc>/tags/groovy/</loc>
+      <lastmod>2018-05-01T20:01:09-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/</loc>
       <lastmod>2016-04-20T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -79,8 +98,28 @@
     
     <url>
     
+      <loc>/tags/spock/</loc>
+      <lastmod>2018-05-01T20:01:09-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/</loc>
       <lastmod>2018-05-01T02:42:46-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/test/</loc>
+      <lastmod>2018-05-01T20:01:09-05:00</lastmod>
       <priority>0</priority>
     </url>
     

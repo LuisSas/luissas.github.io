@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Pruebas unitarias con Spock</title>
+      <link>/post/unittestwithspock/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/post/unittestwithspock/</guid>
+      <description>Spock es un framework de testing para Java y Groovy, hace que los test se escriban de una manera muy facil y clara de leer y saber que van a probar.
+Gracias a que sus pruebas que se dividen en bloques estas se ven descriptivas y ayuda que se puedan entender y añadir propias de manera muy sencilla.
+Gracias a que se ocupa Groovy para las pruebas esto hace que el manejo de estructuras de datos, como listas o mapas se puedan escribir con muy poco código.</description>
+    </item>
+    
+    <item>
       <title>Comenzando con CoffeeScript</title>
       <link>/post/beginwithcoffeescript/</link>
       <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
