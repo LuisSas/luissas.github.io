@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.40.2" />
+  <meta name="author" content="Luis Sastré">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Que es Git? Git es un sistema de control de versiones&hellip; pero que es esto?
+Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.
+El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/firtsstepswithgit/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-109683885-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Luis Sastré">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Luis Sastré">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/firtsstepswithgit/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Luis Sastré">
+  <meta property="og:url" content="/post/firtsstepswithgit/">
+  <meta property="og:title" content="Primeros pasos con Git | Luis Sastré">
+  <meta property="og:description" content="Que es Git? Git es un sistema de control de versiones&hellip; pero que es esto?
+Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.
+El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios"><meta property="og:image" content="/img/git.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-05-03T17:11:12-05:00">
+  
+  <meta property="article:modified_time" content="2018-05-03T17:11:12-05:00">
+  
+
+  
+
+  
+
+  <title>Primeros pasos con Git | Luis Sastré</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Luis Sastré</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#tags">
+            
+            <span>Tags</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  
+  
+    <img src="/img/git.png" class="article-banner" itemprop="image">
+  
+
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Primeros pasos con Git</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-05-03 17:11:12 -0500 CDT" itemprop="datePublished dateModified">
+      May 3, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Luis Sastré">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/firtsstepswithgit/#disqus_thread"></a>
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="que-es-git">Que es Git?</h2>
+
+<p>Git es un sistema de control de versiones&hellip; pero que es esto?</p>
+
+<p>Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.</p>
+
+<p>El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios</p>
+
+<p><img src="/img/control_git.png" alt="Git" /></p>
+
+<h3 id="entendiendo-como-trabaja-git">Entendiendo como trabaja Git</h3>
+
+<p><img src="/img/areas_git.png" alt="Git" /></p>
+
+<h4 id="working-directory">Working directory</h4>
+
+<p>El working directory o directorio de trabajo es una copia de una versión del proyecto, es donde van ocurriendo todos los cambios o agregaciones de archivos de nuestros archivos en local.</p>
+
+<h4 id="staging-area">Staging Area</h4>
+
+<p>Es el área de preparación de un archivo o un grupo de archivos de nuestro directorio, este almacena la información que vamos a ser confirmada.</p>
+
+<h4 id="local-repo">Local repo</h4>
+
+<p>Es nuestro conjunto de archivos (comunmente llamada repositorio) en el cual podemos ver nuestras diferentes versiones de nuestros archivos en nuestro local y asi poder prepararlas para subirlas a un repositorio remoto.</p>
+
+<h4 id="remote-repo">Remote repo</h4>
+
+<p>Es un repositorio que esta por asi decirlo en la nube y que este contiene la información de un proyecto guardado en cierta plataforma</p>
+
+<p><img src="/img/git_repos.jpg" alt="Git" /></p>
+
+<p>Cuando tenemos un proyecto con dos o más personas es aqui en donde entran el juego estas plataformas ya que nos ayudan a colaborar con otras personas sin la necesidad de pasarse los archivos&hellip; o ver quien tiene la versión final del proyecto</p>
+
+<h3 id="trabajando-con-git">Trabajando con Git</h3>
+
+<p>Hay comandos basicos con los que podemos ir teniendo nuestro proyecto versionado para poder trabajar con el desde cualquier equipo.</p>
+
+<p>Para poder tener versionado un proyecto con tener <strong><em>git</em></strong> instalado e iniciandolo en nuestro proyecto es el primer paso</p>
+
+<pre><code class="language-java">➜  gitExample git init
+Initialized empty Git repository in /home/jack/gitExample/.git/
+➜  gitExample git:(master)
+</code></pre>
+
+<p>Esto nos genera una carpeta oculta <strong><em>.git</em></strong> que va a tener lo que necesitamos para trabajar con git&hellip; aunque ahorita no nos meteremos mucho en ello.</p>
+
+<h4 id="comando-básicos">Comando básicos</h4>
+
+<p>Al tener nuestro directorio versionado se apareceran ya ciertos cambios cuando creemos archivos, borremos archivos o modifiquemos algunos y con el comando <strong><em>git status</em></strong> podremos ver ese progreso de los archivos</p>
+
+<pre><code class="language-java">➜  gitExample git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        deleted:    Hola.txt
+        modified:   Readme.md
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        git.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+➜  gitExample git:(master) ✗ 
+</code></pre>
+
+<p>Como se pueden dar cuenta nos muestra estos archivos, podemos proceder a agregarlos al área de preparación con <strong><em>git add</em></strong>.</p>
+
+<p>Se pueden añadir a esta área uno a uno los archivos o todos en conjunto</p>
+
+<pre><code class="language-java">➜  gitExample git:(master) ✗ git add .
+➜  gitExample git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        modified:   Readme.md
+        renamed:    Hola.txt -&gt; git.txt
+
+➜  gitExample git:(master) ✗ 
+</code></pre>
+
+<p>Al añadir los archivos a esta área se pueden mandar directo a la siguiente con la que seria de las partes más importantes, el &ldquo;commit&rdquo;, siempre eh oido decir que el commit es lo mas importante y no es para menos ya que lo que hace es pasar a nuestro repo local y preparlo para el remoto.</p>
+
+<p>Va a tener toda nuestra historia y vamos a poder navegar entre los diferentes Hashes que se generan al hacer el commit, regresarnos a cierta versión de un archivo o grupo de archivos.</p>
+
+<pre><code class="language-java">➜  gitExample git:(master) ✗ git commit -m &quot;Agregando mensaje de hola :D&quot;
+[master 4b3e65b] Agregando mensaje de hola :D
+ 2 files changed, 1 insertion(+)
+ rename Hola.txt =&gt; git.txt (100%)
+➜  gitExample git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  gitExample git:(master) 
+</code></pre>
+
+<p>Para poder ver toda esta historia git proporciona de un log, con varios comandos opcionales despues, pero lo que hacen a grandes rasgos es mostrar nuestra historia.</p>
+
+<pre><code class="language-java">➜  gitExample git:(master) git log
+
+commit 4b3e65b63b4e998f2b7383c2a235cb1ba5fb7fb5
+Author: LuisSas &lt;luis@makingdevs.com&gt;
+Date:   Mon May 7 21:41:32 2018 -0500
+
+    Agregando mensaje de hola :D
+
+commit 0f2c073c7ea42f0d368f692dfa487c595c1c75b8
+Author: LuisSas &lt;luis@makingdevs.com&gt;
+Date:   Mon May 7 21:31:58 2018 -0500
+
+    Agregando archivos para ejemplo
+(END)
+</code></pre>
+
+<h4 id="conclusión">Conclusión</h4>
+
+<p>Git es una herramienta fantastica para el desarrollo de software, se puede ver toda la historia de un desarrollo de software y el cooperar en un proyecto completo.</p>
+
+<p>Considero que es una herramienta dificil de aprender en un inicio pero una vez que empiezas a manejarla es algo hermosa.</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "luissas-me" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      <a href="https://github.com/LuisSas/" target="_blank" rel="noopener">Luis Sastré</a>
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//luissas-me.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

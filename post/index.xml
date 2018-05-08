@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Primeros pasos con Git</title>
+      <link>/post/firtsstepswithgit/</link>
+      <pubDate>Thu, 03 May 2018 17:11:12 -0500</pubDate>
+      
+      <guid>/post/firtsstepswithgit/</guid>
+      <description>Que es Git? Git es un sistema de control de versiones&amp;hellip; pero que es esto?
+Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.
+El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios</description>
+    </item>
+    
+    <item>
       <title>Pruebas unitarias con Spock</title>
       <link>/post/unittestwithspock/</link>
       <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
