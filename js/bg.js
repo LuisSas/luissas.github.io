@@ -1,14 +1,16 @@
 // From https://uigradients.com
 var dreamBGGradients = [
   [],
-  ['#40e0d0', '#ff8c00', '#ff0080'], // Wedding Day Blues
-  ['#3e5151', '#decba4'], // Sand to Blue
-  ['#11998e', '#38ef7d'], // Quepal
-  ['#108dc7', '#ef8e38'], // Pun Yeta
-  ['#fc5c7d', '#6a82fb'], // Sublime Light
-  ['#fc466b', '#3f5efb'], // Sublime Vivid
-  ['#c94b4b', '#4b134f'], // Bighead
-  ['#23074d', '#cc5333'] // Taran Tado
+  //['#40e0d0', '#ff8c00', '#ff0080'], // Wedding Day Blues
+  //['#3e5151', '#decba4'], // Sand to Blue
+  //['#11998e', '#38ef7d'], // Quepal
+  //['#108dc7', '#ef8e38'], // Pun Yeta
+  //['#fc5c7d', '#6a82fb'], // Sublime Light
+  //['#fc466b', '#3f5efb'], // Sublime Vivid
+  //['#0f2027', '#203a43', '#2c5364'], // Moonlit Asteroid
+  ['#373b44', '#4286f4'] // Dark Ocean
+  //['#1a2980', '#26d0ce'] // Aqua Marine
+  //['#1d2b64', '#f8cdda'] // Purple paradise
 ]
 
 var dreamBody = $('body')
