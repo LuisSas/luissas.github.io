@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luis Sastré</title>
+
+  
+  
+  <meta name="author" content="LuisSas" />
+  <meta name="description" content="Spock es un framework de testing para Java y Groovy, hace que los test se escriban de una manera muy facil, clara de leer y saber que van a probar.
+Gracias a que sus pruebas que se dividen en bloques estas se ven descriptivas, ayuda que se puedan entender y añadir propias de manera muy sencilla.
+Gracias a que se ocupa Groovy para las pruebas esto hace que el manejo de estructuras de datos, como listas o mapas se puedan escribir con muy poco código." />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.48" />
+
+
+<link rel="canonical" href="/post/unittestwithspock/" />
+<link rel="alternative" href="/index.xml" title="Luis Sastré" type="application/atom+xml" />
+
+<link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
+  </div>
+</nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Pruebas unitarias con Spock
+          <div class="sub header">@ LuisSas · May 1, 2018 · 2 min read · Update at May 1, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<p>Spock es un framework de testing para Java y Groovy, hace que los test se escriban de una manera muy facil, clara de leer y saber que van a probar.</p>
+
+<p>Gracias a que sus pruebas que se dividen en bloques estas se ven descriptivas, ayuda que se puedan entender y añadir propias de manera muy sencilla.</p>
+
+<p>Gracias a que se ocupa Groovy para las pruebas esto hace que el manejo de estructuras de datos, como listas o mapas se puedan escribir con muy poco código.</p>
+
+<h3 id="bloques">Bloques</h3>
+
+<p>Gracias al manejo de bloques en spock y que cada uno puede describirse por separado, los test son muy descriptivos en cuanto a que se requiere en cada parte y cuando se ejecuta que</p>
+
+<pre><code class="language-java">class MathSpec extends Specification{
+  def &quot;Sum of two numbers&quot;(){
+    given:&quot;the first number&quot;
+      Integer number1 = 10
+    and:&quot;the second number&quot;
+      Integer number2 = 20
+    when:&quot;The two numbers add up&quot;
+      Integer result = number1 + number2
+    then:&quot;The expected result&quot;
+      result == 30
+  }
+}
+</code></pre>
+
+<p>Al ejecutar las pruebas se nos muestra cuantos tests fueron, cuantos pasaron y cuantos fallaron</p>
+
+<pre><code class="language-java">JUnit 4 Runner, Tests: 1, Failures: 0, Time: 750
+</code></pre>
+
+<h3 id="data-driven-testing">Data Driven Testing</h3>
+
+<p>El framework de spock permite probar un mismo método o estructura varias veces gracias al bloque <strong><em>where:</em></strong></p>
+
+<pre><code class="language-java">class MathSpec extends Specification{
+  def &quot;Max of this two numbers&quot;(){
+  	given:&quot;3 numbers&quot;
+  	expect:&quot;the max of this two numbers&quot;
+  	  [a, b].max() == c
+  	where:
+  	a | b | c
+  	1 | 2 | 2
+  	3 | 5 | 5
+  	8 | 1 | 8
+  	1 | 9 | 1
+  }
+}
+</code></pre>
+
+<p>Gracias a su assert <strong><em>==</em></strong> se nos muestra que caso es el que fallo y por que&hellip;</p>
+
+<pre><code class="language-java">JUnit 4 Runner, Tests: 1, Failures: 1, Time: 826
+Test Failure: Max of two numbers(MathSpec)
+Condition not satisfied:
+
+[a, b].max() == c
+ |  |  |     |  |
+ 1  9  9     |  1
+             false
+
+        at MathSpec.Max of two numbers(MathSpec.groovy:7)
+
+</code></pre>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      
+      <a class="ui label" href="/tags/groovy" title="Groovy">Groovy</a>
+      
+      <a class="ui label" href="/tags/spock" title="Spock">Spock</a>
+      
+      <a class="ui label" href="/tags/test" title="Test">Test</a>
+      
+      
+    </footer>
+
+    
+    <footer class="ui secondary attached segment">
+      &copy; 2018
+    </footer>
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = '\/post\/unittestwithspock\/';  
+      this.page.identifier = '\/post\/unittestwithspock\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'luissas-me' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    <section class="ui top attached center aligned inverted segment">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  <h3 class="ui header">LuisSas&#39;s blog<div class="sub header" style="color: white;">luissas</div>
+  </h3>
+
+  <div class="ui inverted horizontal list">
+    
+    <a class="item" href="/post">
+      <i class="archive icon" title="Archives"></i>
+    </a>
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="inverted cubes icon" title="All Categories"></i>
+    </a>
+  </div>
+
+  <a id="tag-category-pop" class="ui red right corner label">
+    <i class="pointing down icon" title="Click this to pop tags and categories"></i>
+  </a>
+</section>
+
+
+<section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
+  
+  <a class="ui label" href="/tags/coffeescript" title="coffeescript">coffeescript</a>
+  
+  <a class="ui label" href="/tags/groovy" title="groovy">groovy</a>
+  
+  <a class="ui label" href="/tags/spock" title="spock">spock</a>
+  
+  <a class="ui label" href="/tags/test" title="test">test</a>
+  
+</section>
+
+
+
+
+<section class="ui bottom attached center aligned inverted segment">
+    
+    <p>© 2017 - 2018 Luis Sastré</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  <div class="item">
+    <a href="mailto:luis@makingdevs.com">
+      <i class="inverted big mail icon" title="email"></i>
+    </a>
+  </div>
+  
+  
+  <div class="item">
+    <a href="https://github.com/https://github.com/LuisSas" target="_blank">
+      <i class="inverted big github icon" title="github"></i>
+    </a>
+  </div>
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      <header class="ui inverted segment">
+        <h2 class="ui header">
+          AboutMe
+        </h2>
+      </header>
+
+      <article class="ui inverted segment back-about">
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+      <footer class="ui secondary segment">
+        &copy; 2018
+      </footer>
+      
+
+      
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109683885-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+
+</html>
