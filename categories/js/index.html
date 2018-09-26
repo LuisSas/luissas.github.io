@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Luis Sastré</title>
+  <title>
+
+category | js
+
+</title>
 
   
   
   <meta name="author" content="LuisSas" />
-  <meta name="description" content="Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje
-CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.
-El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener." />
+  <meta name="description" content="" />
 
 
 
@@ -21,7 +23,7 @@ El código que esta hecho con CoffeeScript es un código el cual luce bastante b
 <meta name="generator" content="Hugo 0.48" />
 
 
-<link rel="canonical" href="/post/beginwithcoffeescript/" />
+<link rel="canonical" href="/categories/js/" />
 <link rel="alternative" href="/index.xml" title="Luis Sastré" type="application/atom+xml" />
 
 <link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
@@ -35,136 +37,27 @@ El código que esta hecho con CoffeeScript es un código el cual luce bastante b
     <div class="flipper">
       <section class="front">
         
-<nav class="ui top secondary menu">
+
+<nav class="ui top secondary menu" style="overflow-x: auto">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/">
-      <i class="inverted big link home icon" title="Home"></i>
-    </a>
+    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
+  </div>
+  <div class="item">
+    
+    <i class="disabled inverted big arrow circle outline left icon" title="Previous page"></i>
+    
+  </div>
+  <div class="item">
+    
+    <i class="disabled inverted big arrow circle outline right icon" title="Next page"></i>
+    
   </div>
 </nav>
  
 <div class="ui centered grid">
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
-
-    <section class="ui secondary top attached black segment">
-      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
-        <i class="save icon"></i>
-      </a>
-      <header>
-        <h1 class="ui header">
-          Comenzando con CoffeeScript
-          <div class="sub header">@ LuisSas · May 1, 2018 · 2 min read · Update at Sep 24, 2018</div>
-        </h1>
-      </header>
-      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
-
-<p>Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje</p>
-
-<p>CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.</p>
-
-<p>El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener.</p>
-
-<h3 id="instalación">Instalación</h3>
-
-<p>CoffeeScript se instala de una manera muy sencilla, lo que tenemos que tener instalado para correrlo en nuestra computadora es lo siguiente:</p>
-
-<ul>
-<li>node</li>
-<li>npm</li>
-</ul>
-
-<pre><code class="language-javascript">npm install --general coffeescript
-</code></pre>
-
-<h3 id="uso">Uso</h3>
-
-<p>Una vez instalado coffeescript ya podremos hacer uso de este lenguaje, de su shell y ejecutar los comandos disponibles.</p>
-
-<script src="https://asciinema.org/a/Y6gJINJfSFpfl9OGjb4LkE4g1.js" id="asciicast-Y6gJINJfSFpfl9OGjb4LkE4g1" data-size="small"></script>
-
-<h3 id="compilación">Compilación</h3>
-
-<p>Como se pudo observar al tener coffee instalado ya podremos hacer varias cosas, entre las cuales de las mas importantes serian la compilación de nuestros archivos <strong><em>.coffee</em></strong> a <strong><em>.js</em></strong></p>
-
-<h4 id="ejemplo-de-archivo-en-coffee">Ejemplo de archivo en .coffee</h4>
-
-<pre><code class="language-javascript">square = (x) -&gt; x * x
-cube = (x) -&gt; square(x) * x
-</code></pre>
-
-<h4 id="archivo-compilado-a-js">Archivo compilado a .js</h4>
-
-<pre><code class="language-javascript">var cube, square;
-
-  square = function(x) {
-    return x * x;
-  };
-
-  cube = function(x) {
-    return square(x) * x;
-  };
-</code></pre>
-
-<h3 id="ventajas-de-usar-coffeescript">Ventajas de usar CoffeeScript</h3>
-
-<ul>
-<li>Nos permite trabajar de una forma mas sencilla</li>
-<li>Escribir menos código</li>
-<li>Podemos aprender javascript leyendo el código compilado</li>
-<li>Facil de mantener</li>
-</ul>
-
-<h3 id="desventajas-de-coffeescript">Desventajas de CoffeeScript</h3>
-
-<ul>
-<li>Ya no tiene actualizaciones desde hace tiempo lo que hace que ya no sea soportado por varios frameworks</li>
-</ul>
-</article>
-    </section>
-
-    <footer class="ui secondary attached segment dream-tags">
-      
-      
-      <a class="ui label" href="/tags/coffeescript" title="CoffeeScript">CoffeeScript</a>
-      
-      
-    </footer>
-
-    
-    <footer class="ui secondary attached segment">
-      &copy; 2018
-    </footer>
-    
-
-    
-    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
-      <div id="disqus_thread"></div>
-      <script>
-      
-
-      
-
-
-      var disqus_config = function () {
-      this.page.url = '\/post\/beginwithcoffeescript\/';  
-      this.page.identifier = '\/post\/beginwithcoffeescript\/'; 
-      };
-
-      (function() { 
-      var d = document, s = d.createElement('script');
-      s.src = 'https://' + 'luissas-me' + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </footer>
-    
-
-  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     <section class="ui top attached center aligned inverted segment">
@@ -317,6 +210,40 @@ cube = (x) -&gt; square(x) * x
 
 
   </div>
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
+
+    <div class="ui two stackable cards">
+      
+      
+
+        <article class="black card">
+  <div class="image">
+    <div class="ui dimmer">
+      <div class="content">
+        <div class="center">
+          <a href="/post/beginwithcoffeescript/">
+            <h2 class="ui header" style="color: white;">Comenzando con CoffeeScript</h2>
+          </a>
+          <p style="padding: 5px;">Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje
+CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.
+El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener.</p>
+          <p>@ LuisSas</p>
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">May 1, 2018</div>
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/CoffeeScript.jpeg" alt="Comenzando con CoffeeScript">
+    
+  </div>
+</article>
+
+
+      
+    </div>
+
+  </div>
 </div>
 
       </section>
@@ -375,6 +302,30 @@ cube = (x) -&gt; square(x) * x
       
 
       
+        
+        <footer class="ui secondary segment">
+          <div id="disqus_thread"></div>
+          <script>
+          
+
+          
+
+
+          var disqus_config = function () {
+          this.page.url = '\/categories\/js\/about';  
+          this.page.identifier = '/about'; 
+          };
+
+          (function() { 
+          var d = document, s = d.createElement('script');
+          s.src = 'https://' + 'luissas-me' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </footer>
+        
       
     </section>
 

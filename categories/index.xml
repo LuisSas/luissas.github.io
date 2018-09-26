@@ -12,11 +12,47 @@
     
     
     <item>
+      <title>Coffeescript</title>
+      <link>/categories/coffeescript/</link>
+      <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
+      
+      <guid>/categories/coffeescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ember</title>
       <link>/categories/ember/</link>
       <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
       
       <guid>/categories/ember/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Js</title>
+      <link>/categories/js/</link>
+      <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
+      
+      <guid>/categories/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tdd</title>
+      <link>/categories/tdd/</link>
+      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      
+      <guid>/categories/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>/categories/version-control/</link>
+      <pubDate>Thu, 03 May 2018 17:11:12 -0500</pubDate>
+      
+      <guid>/categories/version-control/</guid>
       <description></description>
     </item>
     
