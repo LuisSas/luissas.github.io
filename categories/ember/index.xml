@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ember on Luis Sastré</title>
+    <link>/categories/ember/</link>
+    <description>Recent content in Ember on Luis Sastré</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 24 Sep 2018 20:01:26 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/ember/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ember Routes</title>
+      <link>/post/ember_routes/</link>
+      <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
+      
+      <guid>/post/ember_routes/</guid>
+      <description>&lt;p&gt;The ember routes is one of the best things we have to make an incredible application in the web.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

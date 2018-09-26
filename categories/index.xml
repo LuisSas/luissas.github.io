@@ -11,5 +11,14 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Ember</title>
+      <link>/categories/ember/</link>
+      <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
+      
+      <guid>/categories/ember/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

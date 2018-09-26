@@ -5,16 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-
-tag | coffeescript
-
-</title>
+  <title>Luis Sastré</title>
 
   
   
   <meta name="author" content="LuisSas" />
-  <meta name="description" content="" />
+  <meta name="description" content="The ember routes is one of the best things we have to make an incredible application in the web.
+
+" />
 
 
 
@@ -23,7 +21,7 @@ tag | coffeescript
 <meta name="generator" content="Hugo 0.48" />
 
 
-<link rel="canonical" href="/tags/coffeescript/" />
+<link rel="canonical" href="/post/ember_routes/" />
 <link rel="alternative" href="/index.xml" title="Luis Sastré" type="application/atom+xml" />
 
 <link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
@@ -37,27 +35,163 @@ tag | coffeescript
     <div class="flipper">
       <section class="front">
         
-
-<nav class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
-  </div>
-  <div class="item">
-    
-    <i class="disabled inverted big arrow circle outline left icon" title="Previous page"></i>
-    
-  </div>
-  <div class="item">
-    
-    <i class="disabled inverted big arrow circle outline right icon" title="Next page"></i>
-    
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
   </div>
 </nav>
  
 <div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Ember Routes
+          <div class="sub header">@ LuisSas · Sep 24, 2018 · 2 min read · Update at Sep 24, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;"><p>The ember routes is one of the best things we have to make an incredible application in the web.</p>
+
+<p></p>
+
+<p>When you develop a web application one of the most important parts is the passage from one view to another, either with or without data, of course you can do with a lot of things and you have a los of resources for do that.</p>
+
+<p>Ember has their specially form to pass to one route to another, let&rsquo;s see it with an example.</p>
+
+<h2 id="making-an-example-route-application">Making an example route application</h2>
+
+<p>First let&rsquo;s create an application with the cli that Ember has</p>
+
+<pre><code>ember new The_route_of_ember
+</code></pre>
+
+<p>This command will create a simple application with all of things we need to do for start to work</p>
+
+<pre><code>.
+├── README.md
+├── app
+├── config
+├── ember-cli-build.js
+├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+├── testem.js
+├── tests
+└── vendor
+</code></pre>
+
+<p>We can start our application with <code>ember serve</code></p>
+
+<p>We are going to see a welcome-page and our <strong>Hello world</strong> with Ember
+<img src="/img/Ember-welcome-page.png" alt="Ember" /></p>
+
+<p>&hellip; But we are going to see the routes, the main point of this post.</p>
+
+<p>In the app directory Ember has all the magic, like templates, routes, controllers, components, etc. but we will focus on routes and templates.</p>
+
+<p>The next step is create a route, this is very easy with Ember beacuse you only need to run</p>
+
+<pre><code>ember generate route person
+</code></pre>
+
+<p>This commandis going to create 3 files in our project</p>
+
+<ul>
+<li>person.js</li>
+<li>person.hbs</li>
+<li>person-test.js</li>
+</ul>
+
+<p>And this command will modify the route file, this file is going to contain all routes in our project</p>
+
+<p><img src="/img/route-file.png" alt="Ember" /></p>
+
+<p>So we can delete the {{welcome-page}} in the application.hbs file and we can put some like that</p>
+
+<hr />
+
+<p><strong>application.hbs</strong></p>
+
+<p>Hello Ember
+<br>
+{{outlet}}</p>
+
+<hr />
+
+<p><strong>Note: the {{outlet}} will render the sub routes of our project</strong></p>
+
+<p>After we have that we can enter to this route in the URL, but we are going to modify the template <strong>person</strong> for better explanation</p>
+
+<hr />
+
+<p><strong>person.hbs</strong></p>
+
+<pre><code>Person route
+</code></pre>
+
+<hr />
+
+<p>So let&rsquo;s see the magic, when we enter to <strong>localhost:4200</strong> we can se the application template file</p>
+
+<p><img src="/img/Index-ember-route.png" alt="Ember" /></p>
+
+<p>And when we enter to <strong>localhost:4200/person</strong></p>
+
+<p><img src="/img/Route-person.png" alt="Ember" /></p>
+
+<p>This is a very basic example of routes using Ember</p></article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      
+      <a class="ui label" href="/tags/ember" title="Ember">Ember</a>
+      
+      
+    </footer>
+
+    
+    <footer class="ui secondary attached segment">
+      &copy; 2018
+    </footer>
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = '\/post\/ember_routes\/';  
+      this.page.identifier = '\/post\/ember_routes\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'luissas-me' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     <section class="ui top attached center aligned inverted segment">
@@ -138,40 +272,6 @@ tag | coffeescript
 
 
   </div>
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-
-    <div class="ui two stackable cards">
-      
-      
-
-        <article class="black card">
-  <div class="image">
-    <div class="ui dimmer">
-      <div class="content">
-        <div class="center">
-          <a href="/post/beginwithcoffeescript/">
-            <h2 class="ui header" style="color: white;">Comenzando con CoffeeScript</h2>
-          </a>
-          <p style="padding: 5px;">Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje
-CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.
-El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener.</p>
-          <p>@ LuisSas</p>
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">May 1, 2018</div>
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Comenzando con CoffeeScript">
-    
-  </div>
-</article>
-
-
-      
-    </div>
-
-  </div>
 </div>
 
       </section>
@@ -230,30 +330,6 @@ El código que esta hecho con CoffeeScript es un código el cual luce bastante b
       
 
       
-        
-        <footer class="ui secondary segment">
-          <div id="disqus_thread"></div>
-          <script>
-          
-
-          
-
-
-          var disqus_config = function () {
-          this.page.url = '\/tags\/coffeescript\/about';  
-          this.page.identifier = '/about'; 
-          };
-
-          (function() { 
-          var d = document, s = d.createElement('script');
-          s.src = 'https://' + 'luissas-me' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </footer>
-        
       
     </section>
 
