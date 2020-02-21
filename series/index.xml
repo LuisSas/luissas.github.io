@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Jack Blog</title>
-    <link>http://luissas.github.io/series/</link>
+    <link>https://jackmortdt.github.io/series/</link>
     <description>Recent content in Series on Jack Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="http://luissas.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://jackmortdt.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Tools</title>
-        <link>http://luissas.github.io/series/tools/</link>
+        <link>https://jackmortdt.github.io/series/tools/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
         <author>soul6496@gmail.com (JackMortDT)</author>
         
-        <guid>http://luissas.github.io/series/tools/</guid>
+        <guid>https://jackmortdt.github.io/series/tools/</guid>
         <description></description>
         
         <dc:creator>JackMortDT</dc:creator>
