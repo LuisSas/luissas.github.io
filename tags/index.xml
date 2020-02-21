@@ -1,79 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Tags on Luis Sastré</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Luis Sastré</description>
+    <title>Tags on Jack Blog</title>
+    <link>http://luissas.github.io/tags/</link>
+    <description>Recent content in Tags on Jack Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 May 2018 02:42:46 -0500</lastBuildDate>
+    <language>es</language>
+    <managingEditor>soul6496@gmail.com (JackMortDT)</managingEditor>
+    <webMaster>soul6496@gmail.com (JackMortDT)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://luissas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Coffeescript</title>
-      <link>/tags/coffeescript/</link>
-      <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
+    
+
       
-      <guid>/tags/coffeescript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ember</title>
-      <link>/tags/ember/</link>
-      <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
+      <item>
+        <title>Git</title>
+        <link>http://luissas.github.io/tags/git/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        
+        <guid>http://luissas.github.io/tags/git/</guid>
+        <description></description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
-      <guid>/tags/ember/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>/tags/git/</link>
-      <pubDate>Thu, 03 May 2018 17:11:12 -0500</pubDate>
-      
-      <guid>/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Groovy</title>
-      <link>/tags/groovy/</link>
-      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
-      
-      <guid>/tags/groovy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
-      <link>/tags/js/</link>
-      <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
-      
-      <guid>/tags/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spock</title>
-      <link>/tags/spock/</link>
-      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
-      
-      <guid>/tags/spock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>/tags/test/</link>
-      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
-      
-      <guid>/tags/test/</guid>
-      <description></description>
-    </item>
+
     
   </channel>
 </rss>

@@ -1,27 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Git on Luis Sastré</title>
-    <link>/tags/git/</link>
-    <description>Recent content in Git on Luis Sastré</description>
+    <title>Git on Jack Blog</title>
+    <link>http://luissas.github.io/tags/git/</link>
+    <description>Recent content in Git on Jack Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 03 May 2018 17:11:12 -0500</lastBuildDate>
+    <language>es</language>
+    <managingEditor>soul6496@gmail.com (JackMortDT)</managingEditor>
+    <webMaster>soul6496@gmail.com (JackMortDT)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://luissas.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Primeros pasos con Git</title>
-      <link>/post/firtsstepswithgit/</link>
-      <pubDate>Thu, 03 May 2018 17:11:12 -0500</pubDate>
+    
+
       
-      <guid>/post/firtsstepswithgit/</guid>
-      <description>Que es Git? Git es un sistema de control de versiones&amp;hellip; pero que es esto?
-Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.
-El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios</description>
-    </item>
+      <item>
+        <title>Qué es Git?</title>
+        <link>http://luissas.github.io/posts/que-es-git/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>http://luissas.github.io/posts/que-es-git/</guid>
+        <description>&lt;p&gt;Este articulo ofrece un acercamiento a lo que es Git, lo que es a grandes rasgos y el uso que se le puede dar.&lt;/p&gt;</description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        <media:content url="http://luissas.github.io/images/posts/git.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+          
+            
+              <category>Tools</category>
+            
+          
+        
+        
+          
+            
+              <category>Tools</category>
+            
+          
+        
+      </item>
+      
+
     
   </channel>
 </rss>

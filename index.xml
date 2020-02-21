@@ -1,97 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Luis Sastré</title>
-    <link>/</link>
-    <description>Recent content on Luis Sastré</description>
+    <title>Jack Blog</title>
+    <link>http://luissas.github.io/</link>
+    <description>Recent content on Jack Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <language>es</language>
+    <managingEditor>soul6496@gmail.com (JackMortDT)</managingEditor>
+    <webMaster>soul6496@gmail.com (JackMortDT)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 20 Feb 2020 23:58:33 +0900</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://luissas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title></title>
-      <link>/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+    
       
-      <guid>/home/about/</guid>
-      <description>Biography Luis Sastré is a software developer in Making Devs. He works as a programmer in Making Devs doing the best and funny things he likes to do&amp;hellip; Programming.
-My dream is that all the knowledge that I earn in all of different topics, I be able to share with all of us my dear audience.</description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0500</pubDate>
       
-      <guid>/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+        
       
-      <guid>/home/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ember Routes</title>
-      <link>/post/ember_routes/</link>
-      <pubDate>Mon, 24 Sep 2018 20:01:26 -0500</pubDate>
+        
       
-      <guid>/post/ember_routes/</guid>
-      <description>&lt;p&gt;The ember routes is one of the best things we have to make an incredible application in the web.&lt;/p&gt;
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
 
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Primeros pasos con Git</title>
-      <link>/post/firtsstepswithgit/</link>
-      <pubDate>Thu, 03 May 2018 17:11:12 -0500</pubDate>
       
-      <guid>/post/firtsstepswithgit/</guid>
-      <description>Que es Git? Git es un sistema de control de versiones&amp;hellip; pero que es esto?
-Es un sistema el cual nos permite guardar información y tener un control de los cambios que se vayan haciendo en uno o varios archivos.
-El tener el control de estos archivos permite tener un juego muy importante en la elaboración de proyectos en un equipo ya que al tener el control de la información y de los cambios que va teniendo un proyecto, se puede reciclar información que ya este escrita y permitir tener archivos mas limipios</description>
-    </item>
-    
-    <item>
-      <title>Pruebas unitarias con Spock</title>
-      <link>/post/unittestwithspock/</link>
-      <pubDate>Tue, 01 May 2018 20:01:09 -0500</pubDate>
+      <item>
+        <title>Qué es Git?</title>
+        <link>http://luissas.github.io/posts/que-es-git/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>http://luissas.github.io/posts/que-es-git/</guid>
+        <description>&lt;p&gt;Este articulo ofrece un acercamiento a lo que es Git, lo que es a grandes rasgos y el uso que se le puede dar.&lt;/p&gt;</description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        <media:content url="http://luissas.github.io/images/posts/git.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+          
+            
+              <category>Tools</category>
+            
+          
+        
+        
+          
+            
+              <category>Tools</category>
+            
+          
+        
+      </item>
       
-      <guid>/post/unittestwithspock/</guid>
-      <description>Spock es un framework de testing para Java y Groovy, hace que los test se escriban de una manera muy facil, clara de leer y saber que van a probar.
-Gracias a que sus pruebas que se dividen en bloques estas se ven descriptivas, ayuda que se puedan entender y añadir propias de manera muy sencilla.
-Gracias a que se ocupa Groovy para las pruebas esto hace que el manejo de estructuras de datos, como listas o mapas se puedan escribir con muy poco código.</description>
-    </item>
-    
-    <item>
-      <title>Comenzando con CoffeeScript</title>
-      <link>/post/beginwithcoffeescript/</link>
-      <pubDate>Tue, 01 May 2018 02:42:46 -0500</pubDate>
-      
-      <guid>/post/beginwithcoffeescript/</guid>
-      <description>Hace poco tiempo estuve en el desarrollo de un sistema informático en el cual toda la parte del front estaba hecho con CoffeeScript, por lo cual tuve la necesidad de aprender un poco hacerca de este maravilloso lenguaje
-CoffeeScript es un transpilador de código, y esto significa, que al momento de compilar, este genera código en javascript.
-El código que esta hecho con CoffeeScript es un código el cual luce bastante bien, es un código que es facil de leer, facil de entender y facil de mantener.</description>
-    </item>
+
     
   </channel>
 </rss>
