@@ -48,13 +48,17 @@
   </url>
   
   <url>
+    <loc>https://jackmortdt.github.io/series/tools/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jackmortdt.github.io/categories/tools/</loc>
     <lastmod>2019-12-20T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jackmortdt.github.io/series/tools/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <loc>https://jackmortdt.github.io/tags/index/</loc>
   </url>
   
 </urlset>
