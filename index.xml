@@ -44,6 +44,50 @@
 
       
       <item>
+        <title>Discord-bot Spring boot y Gradle</title>
+        <link>https://jackmortdt.github.io/posts/discord-bot-spring-boot/</link>
+        <pubDate>Fri, 24 Jul 2020 12:27:06 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        <atom:modified>Fri, 24 Jul 2020 12:27:06 +0900</atom:modified>
+        <guid>https://jackmortdt.github.io/posts/discord-bot-spring-boot/</guid>
+        <description>Vamos a hacer un bot sencillo para discord con la ayuda de spring boot y JDA 🤖
+Requerimientos  JDK8 +  1 2  $ echo $JAVA_HOME /Users/jackmort/.jenv/versions/1.8   Recomiendo instalar Java con jenv que es un manejador de versiones de jdk
+  Editor de código de preferencia
+ Vim Visual studio code Sublime IntelliJ    Gradle
+  1 2  $ echo $GRADLE_HOME /Users/jackmort/.</description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        <media:content url="https://jackmortdt.github.io/images/posts/discord-bot-spring-boot/logo_discord.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Groovy</category>
+            
+          
+            
+              <category>Spring boot</category>
+            
+          
+        
+        
+          
+            
+              <category>Programming</category>
+            
+          
+        
+        
+          
+            
+              <category>Fun</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Qué es Git?</title>
         <link>https://jackmortdt.github.io/posts/que-es-git/</link>
         <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
