@@ -45,11 +45,11 @@
       
       <item>
         <title>Bot de discord con elixir</title>
-        <link>https://jackmortdt.github.io/posts/dicord_bot_elixir/</link>
+        <link>https://jackmortdt.github.io/posts/discord_bot_elixir/</link>
         <pubDate>Fri, 11 Sep 2020 12:00:47 +0900</pubDate>
         <author>soul6496@gmail.com (JackMortDT)</author>
         <atom:modified>Fri, 11 Sep 2020 12:00:47 +0900</atom:modified>
-        <guid>https://jackmortdt.github.io/posts/dicord_bot_elixir/</guid>
+        <guid>https://jackmortdt.github.io/posts/discord_bot_elixir/</guid>
         <description>Lo que se busca hacer con este post es hacer una interación entre el usuario y un bot creado apartir de elixir.
 Dependencias 1  {:discord_ex, &amp;#34;~&amp;gt; 1.1.18&amp;#34;}   La principal dependecia, la cual nos hara tener una conexión con discord es disord_ex.
 En mi caso al momento de levantar la aplicación tenía un error de compilación por una de las dependencias que ocupaba discord_ex, para solucionar dicho problema fue tomar una versión más actual de la dependencia fallida y sobreescribirla por una versión que no tuviera ese error, si esto no te llega a pasar no es necesario agregar esta dependencia.</description>
