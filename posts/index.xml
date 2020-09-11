@@ -14,13 +14,51 @@
     <managingEditor>soul6496@gmail.com (JackMortDT)</managingEditor>
     <webMaster>soul6496@gmail.com (JackMortDT)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 24 Jul 2020 12:27:06 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 12:00:47 +0900</lastBuildDate>
     
         <atom:link href="https://jackmortdt.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Bot de discord con elixir</title>
+        <link>https://jackmortdt.github.io/posts/dicord_bot_elixir/</link>
+        <pubDate>Fri, 11 Sep 2020 12:00:47 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        <atom:modified>Fri, 11 Sep 2020 12:00:47 +0900</atom:modified>
+        <guid>https://jackmortdt.github.io/posts/dicord_bot_elixir/</guid>
+        <description>Lo que se busca hacer con este post es hacer una interación entre el usuario y un bot creado apartir de elixir.
+Dependencias 1  {:discord_ex, &amp;#34;~&amp;gt; 1.1.18&amp;#34;}   La principal dependecia, la cual nos hara tener una conexión con discord es disord_ex.
+En mi caso al momento de levantar la aplicación tenía un error de compilación por una de las dependencias que ocupaba discord_ex, para solucionar dicho problema fue tomar una versión más actual de la dependencia fallida y sobreescribirla por una versión que no tuviera ese error, si esto no te llega a pasar no es necesario agregar esta dependencia.</description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        <media:content url="https://jackmortdt.github.io/images/posts/elixir_discord_bot/discord-elixir-banner.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Elixir</category>
+            
+          
+        
+        
+          
+            
+              <category>Programming</category>
+            
+          
+        
+        
+          
+            
+              <category>Fun</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Discord-bot Spring boot y Gradle</title>
