@@ -30,8 +30,8 @@
         <atom:modified>Fri, 11 Sep 2020 12:00:47 +0900</atom:modified>
         <guid>https://jackmortdt.github.io/posts/discord_bot_elixir/</guid>
         <description>Lo que se busca hacer con este post es hacer una interación entre el usuario y un bot creado apartir de elixir.
-Dependencias 1  {:discord_ex, &amp;#34;~&amp;gt; 1.1.18&amp;#34;}   La principal dependecia, la cual nos hara tener una conexión con discord es disord_ex.
-En mi caso al momento de levantar la aplicación tenía un error de compilación por una de las dependencias que ocupaba discord_ex, para solucionar dicho problema fue tomar una versión más actual de la dependencia fallida y sobreescribirla por una versión que no tuviera ese error, si esto no te llega a pasar no es necesario agregar esta dependencia.</description>
+Requerimientos  Elixir (En este ejemplo se uso la versión 1.8) Erlang (Erlang otp 23)  Crear una nueva aplicación Para crear un nuevo proyecto en elixir, basta con ejecutar el siguiente comando.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  $ mix new new_app * creating README.</description>
         
         <dc:creator>JackMortDT</dc:creator>
         <media:content url="https://jackmortdt.github.io/images/posts/elixir_discord_bot/discord-elixir-banner.png" medium="image"><media:title type="html">featured image</media:title></media:content>

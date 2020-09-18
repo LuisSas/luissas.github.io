@@ -1501,6 +1501,8 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
+        <li><a href="#requerimientos">Requerimientos</a></li>
+        <li><a href="#crear-una-nueva-aplicación">Crear una nueva aplicación</a></li>
         <li><a href="#dependencias">Dependencias</a></li>
         <li><a href="#configuración">Configuración</a></li>
         <li><a href="#aplicación">Aplicación</a></li>
@@ -1512,7 +1514,64 @@ if (!doNotTrack) {
 </div>
 
       <p>Lo que se busca hacer con este post es hacer una interación entre el usuario y un bot creado apartir de elixir.</p>
+<h3 id="requerimientos">Requerimientos</h3>
+<ul>
+<li>Elixir (En este ejemplo se uso la versión 1.8)</li>
+<li>Erlang (Erlang otp 23)</li>
+</ul>
+<h3 id="crear-una-nueva-aplicación">Crear una nueva aplicación</h3>
+<p>Para crear un nuevo proyecto en elixir, basta con ejecutar el siguiente comando.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ mix new new_app
+
+* creating README.md
+* creating .formatter.exs
+* creating .gitignore
+* creating mix.exs
+* creating config
+* creating config/config.exs
+* creating lib
+* creating lib/new_app.ex
+* creating <span class="nb">test</span>
+* creating test/test_helper.exs
+* creating test/new_app_test.exs
+
+Your Mix project was created successfully.
+You can use <span class="s2">&#34;mix&#34;</span> to compile it, <span class="nb">test</span> it, and more:
+
+    <span class="nb">cd</span> new_app
+    mix <span class="nb">test</span>
+
+Run <span class="s2">&#34;mix help&#34;</span> <span class="k">for</span> more commands.
+</code></pre></td></tr></table>
+</div>
+</div><p>Al ejecutar el comando se te generaran diversos archivos en la carpeta new_app.</p>
 <h3 id="dependencias">Dependencias</h3>
+<p>Una vez el proyecto este creado procederemos a agregar las dependencias necesarias para el ejemplo.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1595,8 +1654,8 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="configuración">Configuración</h3>
-<p>Se necesita tener un toker para poder usar el bot, pero no es recomendable versionar ese token, por lo cual yo lo tomo de una variable de entorno nombrada como <em>DISCORD_TOKEN</em>.</p>
-<p>En mi caso definí un caracter para poder hablar con el bot, y que solo interactue cuando ese comando esta precente como el primer caracter de la cadena escrita.</p>
+<p>Se necesita tener un token para poder usar el bot, pero no es recomendable versionar ese token, por lo cual es recomendable tomarlo de una variable de entorno, en el caso de este ejemplo nombrada como <em>DISCORD_TOKEN</em>.</p>
+<p>Se define un un caracter para poder hablar con el bot, y que solo interactue cuando ese comando esta precente como el primer caracter de la cadena escrita.</p>
 <p><code>config/config.exs</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1613,8 +1672,8 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="aplicación">Aplicación</h3>
-<p>En este caso se agrega un Supervisor junto con un children para poder tener una constante comunicación entre discord y el bot.</p>
-<p>Borre el caso de ejemplo de un hola mundo cuando creas un nuevo proyecto con Mix y agregue la configuración necesaria para cuando se levanta la aplicación.</p>
+<p>Se agrega un Supervisor junto con un children para poder tener una constante comunicación entre discord y el bot.</p>
+<p>Cuando creas un nuevo proyecto con Mix viene un ejemplo y un test de <strong>hola mundo</strong>, eso no es necesario tenerlo, por lo cual se quita y se agrega la configuración necesaria para la aplicación.</p>
 <p><code>lib/discord_elixir.ex</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1664,7 +1723,7 @@ if (!doNotTrack) {
 <span class="n">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>En este caso declare un archivo llamado Worker, en la ruta de lib/manager, este es el archivo crucial para la conexión entre elixir y discord, ya que va a ser el que va a iniciar el socket con una comunicación continua entre ambos, este archivo se va a encargar de esa comunicación y la deteción de los eventos provenientes de discord.</p>
+</div><p>Se declara un archivo llamado Worker, en la ruta de lib/manager, este es el archivo crucial para la conexión entre elixir y discord, ya que va a ser el que va a iniciar el socket con una comunicación continua entre ambos, este archivo se va a encargar de esa comunicación y la deteción de los eventos provenientes de discord.</p>
 <p><code>lib/manager/worker.ex</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1729,22 +1788,22 @@ if (!doNotTrack) {
 </li>
 <li>
 <ol start="12">
-<li>Es el que se encarga de escuchar los eventos de discord, se recibe un mensaje, el payload que es toda la infomación proveniente de quien escribio el mensaje, cuando, si es un bot o no etc y un state o estado.</li>
+<li>Es el que se encarga de escuchar los eventos de discord, se recibe un mensaje, el payload que es toda la infomación proveniente de quien escribio el mensaje, cuando, si es un bot o no etc y un estado.</li>
 </ol>
 </li>
 <li>
 <ol start="14">
-<li>Agregue esta validación ya que el bot puede ver y recibir los mensajes de otros bots, en este ejemplo de prueba eso no me interesa, pero para que sepan que se puede tener una comunicación entre bots de una manera muy sencilla.</li>
+<li>Validación para verificar si el autor del mensaje es un bot o no.</li>
 </ol>
 </li>
 <li>
 <ol start="15">
-<li>Mande llamar a archivo de utilidad, para el proceso de todos los mensajes, esto para hacer las llamadas de una forma asincróna.</li>
+<li>Archivo de utilidad, para el proceso de todos los mensajes, es recomendable trabajarlo de manera asincrona.</li>
 </ol>
 </li>
 </ul>
-<p>Por último, declare un archivo llamado <strong>ProcessMessageUtil</strong>, para poder procesar los mensajes llegados al evento y no tener todo lleno en nuestro archivo de conexión.</p>
-<p>En este ejemplo solo tendre 2 procesamientos de mensajes, para el comando <em><strong>!hello</strong></em> y para el comando <em><strong>!info</strong></em>.</p>
+<p>Por último, se declara un archivo llamado <strong>ProcessMessageUtil</strong>, para poder procesar los mensajes llegados al evento y no tener todo lleno en nuestro archivo de conexión.</p>
+<p>En este ejemplo solo se tienen 2 procesamientos de mensajes, para el comando <em><strong>!hello</strong></em> y para el comando <em><strong>!info</strong></em>.</p>
 <p><code>lib/util/process_message_util.ex</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1837,7 +1896,7 @@ if (!doNotTrack) {
 </ol>
 </li>
 </ul>
-<p>Con eso termino este ejemplo, dejo el repositorio de <a href="https://github.com/JackMortDT/discord_bot_elixir_demo">Github</a> y me despido por hoy 🦎.</p>
+<p>Con eso se termina este ejemplo, dejo el repositorio de <a href="https://github.com/JackMortDT/discord_bot_elixir_demo">Github</a> y me despido por hoy 🦎.</p>
 
     </article>
     <script>
@@ -2415,6 +2474,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li>
       <ul>
+        <li><a href="#requerimientos">Requerimientos</a></li>
+        <li><a href="#crear-una-nueva-aplicación">Crear una nueva aplicación</a></li>
         <li><a href="#dependencias">Dependencias</a></li>
         <li><a href="#configuración">Configuración</a></li>
         <li><a href="#aplicación">Aplicación</a></li>
