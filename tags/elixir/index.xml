@@ -14,13 +14,51 @@
     <managingEditor>soul6496@gmail.com (JackMortDT)</managingEditor>
     <webMaster>soul6496@gmail.com (JackMortDT)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 11 Sep 2020 12:00:47 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 23 Apr 2021 12:00:47 +0900</lastBuildDate>
     
         <atom:link href="https://jackmortdt.github.io/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Vinculación de variables en Elixir</title>
+        <link>https://jackmortdt.github.io/posts/how_elixir_matches_variables_to_values/</link>
+        <pubDate>Fri, 23 Apr 2021 12:00:47 +0900</pubDate>
+        <author>soul6496@gmail.com (JackMortDT)</author>
+        <atom:modified>Fri, 23 Apr 2021 12:00:47 +0900</atom:modified>
+        <guid>https://jackmortdt.github.io/posts/how_elixir_matches_variables_to_values/</guid>
+        <description>Pattern Matching Como vincula Elixir valores con variables. 1 2  number = 1 number + 3   La mayoría de los programadores verían el código y dirían.
+&amp;ldquo;Ok, estamos asignando el valor de 1 a la variable de numero y al sumar 3 nos da como resultado 4&amp;rdquo;
+Esto en Elixir es incorrecto. En Elixir el signo de igual (=) no es una asignación. Es una aserción. Esta aserción es verdadera cuando Elixir logra igualar el lado derecho con el lado izquierdo.</description>
+        
+        <dc:creator>JackMortDT</dc:creator>
+        <media:content url="https://jackmortdt.github.io/images/posts/how-elixir-matches-variables/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Elixir</category>
+            
+          
+        
+        
+          
+            
+              <category>Programming</category>
+            
+          
+        
+        
+          
+            
+              <category>Fun</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Bot de discord con elixir</title>
