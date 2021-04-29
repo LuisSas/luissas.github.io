@@ -1231,7 +1231,7 @@
     "url" : "https://jackmortdt.github.io/posts/rna_transcription/",
     "description": "Rna Transcription",
     "keywords": ["Elixir"],
-    "image" : "https://jackmortdt.github.io/images/posts/how-elixir-matches-variables/logo.png",
+    "image" : "https://jackmortdt.github.io/images/posts/elixir/dnarna.jpeg",
     "author": {
       "@type": "Person",
       "name": "JackMortDT"
@@ -1607,7 +1607,7 @@ Tanto las hembras de DNA como RNA son una secuencia de nucleoides.</p>
 </ul>
 <p>Entonces, ya que tenemos esto y habiendo pasado la primera prueba con el código anterior, vamos a escribir los demas casos para el problema.</p>
 <script id="asciicast-P1kenlcxY59JRpazrvboO3iGI" src="https://asciinema.org/a/P1kenlcxY59JRpazrvboO3iGI.js" data-size="small"></script>
-<p>Con esto ya pasamos los test, pero no me convence al 100, para esto es algo bueno el TDD, podemos ir haciendo refactor a nuestro código sin mover su funcionalidad.</p>
+<p>Con esto ya pasamos los test, pero no me convence al 100, para esto es algo bueno el TDD, podemos ir haciendo refactor a nuestro código sin afectar la funcionalidad del código.</p>
 <h3 id="lo-que-tenemos-que-cambiar"><strong>Lo que tenemos que cambiar</strong></h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1672,7 +1672,7 @@ Tanto las hembras de DNA como RNA son una secuencia de nucleoides.</p>
 <span class="n">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>De acuerdo con diferentes benchmark el <strong>for</strong> consume más recursos que un <a href="https://hexdocs.pm/elixir/Map.html#content"><strong>Enum.map</strong></a>, entonces vamos a cambiar un poco nuestro código.</p>
+</div><p>De acuerdo con diferentes benchmarks el <strong>for</strong> consume más recursos que un <a href="https://hexdocs.pm/elixir/Map.html#content"><strong>Enum.map</strong></a>, entonces vamos a cambiar un poco nuestro código.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1719,7 +1719,8 @@ Tanto las hembras de DNA como RNA son una secuencia de nucleoides.</p>
 <span class="n">end</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="heading">🦎</h1>
+</div><p>Y así habremos terminado el ejercicio de <strong>RNA Transcription</strong>.</p>
+<h1 id="heading">🦎</h1>
 
     </article>
     <script>
